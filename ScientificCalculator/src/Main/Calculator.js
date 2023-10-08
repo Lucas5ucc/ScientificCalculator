@@ -1,6 +1,9 @@
 var display = document.getElementById("screen");
 var buttons = document.getElementsByClassName("button");
 
+var nightMode;
+var lightMode;
+
 Array.prototype.forEach.call(buttons, function(button) {
     button.addEventListener("click", function() {
         if (button.textContent !== "=" &&
